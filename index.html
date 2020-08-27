@@ -1,44 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Hiking</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="images/logo.png" class="logo" id="logo"></div>
-            <div class="nav-items" id="nav-items">
-                <ul>
-                    <li><a href="#" class="home" id="home" >Home</a></li>
-                    <li><a href="#" class="menu" id="menu">Menu</a></li>
-                    <li><a href="#" class="story" id="story"> Our story</a></li>
-                    <li><a href="#" class="contact" id="contact">Contact us</a></li>
-                    <input type="text" id="search" name="search"><i class="fa fa-search fa-2x searchIcon" aria-hidden="true"></i>
-                
-                   
-                </ul>
-            </div>
-
-        </nav>
-     
-        
-        
-    
+      <nav>
+        <img src="images/logo.png" class="logo" id="logo" />
+        <div class="nav-items " id="nav-items">
+          <ul>
+            <span class="topnav" id="myTopnav">
+            <li><a href="#" class="home item" id="home">Home</a></li>
+            <li><a href="#" class="menu item" id="menu">Menu</a></li>
+            <li><a href="#" class="story item" id="story"> Our story</a></li>
+            <li><a href="#" class="contact item" id="contact">Contact us</a></li>
+           <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars fa-2x"></i></a></li>
+            </span>
+            <input type="text" id="search" name="search" /><i
+              class="fa fa-search fa-2x searchIcon"
+              aria-hidden="true"
+            ></i>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <img src="images/shape.png" alt="" class="first">
+    <img src="images/shape.png" alt="" class="shape first" />
     <div class="main-content">
-        <!-- <img src="images/header1.png" alt="Girl with back pack" class="header-pic"> -->
-        <h1 class="header-text">IT´S TIME <br> FOR HIKING</h1>
+      <!-- <img src="images/header1.png" alt="Girl with back pack" class="header-pic"> -->
+      <h1 class="header-text">
+        IT´S TIME <br />
+        FOR HIKING
+      </h1>
+      <span class="sec-heading">LOREMIPSUM DOLOR</span>
+      <button class="btn btn1" id="read">Read more</button>
+      <p class="main-para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod
+        tempor incididunt ut labore et dolore magna.
+      </p>
     </div>
- 
+    <img src="images/shape2.png" alt="" class="shape second" />
+    <div class="go-container">
+      <h2 class="sub-heading">Let's go</h2>
+      <p class="sub-text" id="go-subText">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
+        odio vitae vestibulum vestibulum.
+      </p>
+      <div class="go-wrapper">
+        <div class="go goFirst" id="goFirst">
+          <div class="pic-wrap">
+            <img
+              src="images/go1.png"
+              alt="Women looking into horizon"
+              class="goPic"
+            />
+          </div>
+          <span class="goText">Lorem ipsum</span>
+          <p class="goPara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing...
+          </p>
+        </div>
+        <div class="go goSecond" id="goSecond">
+          <div class="pic-wrap">
+            <img
+              src="images/go22.png"
+              alt="Women looking into horizon"
+              class="goPic"
+            />
+          </div>
+          <span class="goText">Lorem ipsum</span>
+          <p class="goPara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing...
+          </p>
+        </div>
+        <div class="go goThird" id="goThird">
+          <div class="pic-wrap">
+            <img
+              src="images/go3.png"
+              alt="Women looking into horizon"
+              class="goPic"
+            />
+          </div>
+          <span class="goText">Lorem ipsum</span>
+          <p class="goPara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing...
+          </p>
+        </div>
+      </div>
+      <button class="btn btnGo">Show More</button>
+      <img src="images/de1.png" alt="" class="leaf1" />
+    </div>
+    <div class="discount-container">
+      <div class="discount-wrapper">
+        <div class="disc" id="discountPic">
+          <!-- <img src="images/go23.png" alt="Women looking into horizon" class="goPic"> -->
+        </div>
+        <div class="disc" id="discountCode">
+          <h3 class="disc-heading">Discount up to 50% All Excursions</h3>
+          <p class="discPara">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat.
+          </p>
+          <button class="btn btnDisc">Read more</button>
+        </div>
+        <div class="disc" id="promoCode">
+          <h3 class="prom-heading">January’s Promo: Buy 1 Get 1 Free!</h3>
+          <p class="promPara">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat.
+          </p>
+          <button class="btn btnProm">Read more</button>
+        </div>
+        <div class="disc" id="promopic">
+          <!-- <img src="images/prom.png" alt="Women looking into horizon" class="goPic"> -->
+        </div>
+      </div>
+    </div>
+    <img src="images/shape3.png" alt="" class="shape third" />
+    <div class="hike-container">
+      <h3 class="hike-heading">Hiking in the mountains</h3>
+      <p class="hike-para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam quis
+      </p>
+      <img src="images/de1.png" alt="" class="leaf1" />
+    </div>
+    <img src="images/shape5.png" alt="" class="shape five" />
+    <div class="explore-container">
+      <h2 class="explore-heading">Explore</h2>
+      <br />
+      <h2 class="world-heading">The World</h2>
+    </div>
+    <img src="images/shape6.png" alt="" class="shape six" />
+    <div class="testimonials" id="testimonials">
     
-    
-</body>
+      <div class="test-container">
+        <div class="test test1" id="test1">
+          <h4 class="test-heading">lorem ipsum</h4>
+          <p class="test-para" id="test-para1">
+            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+            tation omne ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+        <div class="test test2" id="test2">
+          <h4 class="test-heading">lorem ipsum</h4>
+          <p class="test-para" id="test-para1">
+            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+            tation omne ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+        <div class="test test3" id="test3">
+          <h4 class="test-heading">lorem ipsum</h4>
+          <p class="test-para" id="test-para1">
+            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit,
+            tation omne ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+        <div class="test test4" id="test4">
+          <div class="quotation">"</div>
+          <br />
+          <p class="quotation-para" id="quotation-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis
+          </p>
+          <div class="author" id="author">Lorem ipsum</div>
+        </div>
+      </div>
+    </div>
+      <img src="images/leaf4.png" alt="" class="leaf4" />
+
+    <img src="images/shape3.png" alt="" class="shape seven" />
+    <div class="sub" id="sub">
+      <div class="sub-content">
+        <h2 class="sub-heading">Title here</h2>
+        <p class="sub-para" id="sub-para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <input type="email" id="email" name="email" placeholder="Your email" />
+        <button class="btn subscribe" id="btn-subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <img src="images/eight.png" alt="" class="shape eight" />
+    <footer>
+      <div class="foot-wrapper">
+        <div class="foot title" id="foot-title">
+          <div class="footer-title">Title Here</div>
+          <p class="footer-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+            dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+            dignissim enim.
+          </p>
+          <div class="social-wrapper">
+            <button class="socialBtn" id="insta">
+              <a href="#" class="insta" id="insta">
+                <i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </button>
+            <button class="socialBtn" id="fb">
+              <a href="#" class="fb" id="fb">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+            </button>
+            <button class="socialBtn" id="twit">
+              <a href="#" class="twitter" id="twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </button>
+            <button class="socialBtn" id="whats">
+              <a href="#" class="whatsapp" id="whatsapp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="foot about" id="foot-about">
+          <div class="footer-title">About</div>
+          <ul>
+            <li class="fAbout">
+              <a href="#" class="about-link">History</a>
+            </li>
+            <li class="fteam">
+              <a href="#" class="term-link">Our Team</a>
+            </li>
+            <li class="fbrand">
+              <a href="#" class="brand-link">Brand Guidelines</a>
+            </li>
+            <li class="fterms">
+              <a href="#" class="conditions-link">Terms & Condition</a>
+            </li>
+            <li class="privacy">
+              <a href="#" class="about-privacy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot services" id="foot-services">
+          <div class="footer-title">Services</div>
+          <ul>
+            <li class="fOrder">
+              <a href="#" class="about-order">History</a>
+            </li>
+            <li class="fProduct">
+              <a href="#" class="our-product">Our Product</a>
+            </li>
+            <li class="fStatus">
+              <a href="#" class="order-link">Order Status</a>
+            </li>
+            <li class="fpromo">
+              <a href="#" class="promo-link">Promo</a>
+            </li>
+            <li class="fPay">
+              <a href="#" class="pay-link">Payment Method</a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot others" id="foot-others">
+          <div class="footer-title">Other</div>
+          <ul>
+            <li class="fContact">
+              <a href="#" class="contact-link">contact Us</a>
+            </li>
+            <li class="fHelp">
+              <a href="#" class="help-link">Help</a>
+            </li>
+            <li class="fPrivacy">
+              <a href="#" class="privacy-link">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
 </html>
